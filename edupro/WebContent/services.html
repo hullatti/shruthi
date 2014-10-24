@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+		color: black;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	th, td {
+    padding: 5px;
+    text-align: left;
+    font: 8px;	
+}
+    
+        h4{ 
+   background: grey;
+      color: white;
+      padding: 0px 0;
+      position: relative;
+      top: 0;
+     
+    }
+	
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	 h4{ 
+     width:500px
+      color: white;
+      padding: 0px 0;
+      position: relative;
+      top: 0;
+     
+    }
+	</style>
+</head>
+<body style="padding: 0; margin: 0; font-family: Arial, Verdana; background-color: #fff;  " >
+ <div style="width: 800px; font-size: 16px">	
+		<h4 class="right-only"> <table style="width: 100%">
+  <tr>
+    <th><a href = "http://localhost:8080/edupro/jsp/home.jsp" style="color: white"> Home </a></th>
+    <th> <a href = "#" style="color: white">Projects </a> </th>		
+    <th> <a href = "http://localhost:8080/edupro/jsp/techcourses.jsp" style="color: white">Technical Courses </a> </th>
+      <th> <a href = "#" style="color: white">Workshop</a> </th>
+    <th><a href = "http://localhost:8080/edupro/services.html" style="color: white">Services </a> </th>		
+    <th><a href = "http://localhost:8080/edupro/jsp/expert.jsp" style="color: white">Our Expert Team </a></th>
+      <th>  <a href='#' onclick='javascript:window.open("http://localhost:8080/edupro/jsp/contactus.jsp", "_blank", "scrollbars=1,resizable=1,height=300,width=450");' title='Pop Up' style="color: white">Contact Us </a>	 </th>
+  </tr>
+  </table></h4>
+		
+		</div>
+		
+		
+           
+ <div style="position: relative; width: 100%;height :500px; overflow: hidden;" align="center">
+ <div style="font-weight: inherit;">
+ <h1 >Our Services</h1></div>
+<h1 class="demoHeaders"  >We are a Technical education service provider for Engineering students. we develop technical skills through experts and learning tools. 
+               We offer an array of project and software training to confirm to ne aleds of our client. We have the ability to customize a solution to fit your learning objectives.
+
+</h1>
+
+<!-- Accordion -->
+<h2 class="demoHeaders">Know More</h2>
+<div id="accordion" align="center" style="width: 800px; font-size: 14px;">
+	<h3>FOR COLLEGES:</h3>
+	<div>             We have the ability to customize an affordable solution to suit your individual college distinct needs. It`s very typical to manage best experts for every skills by  colleges but we have customized , affordable solutions for the colleges. Engineering colleges self rank gets increased if they  provide best experts to the student. We also provide online workshop for colleges.  
+
+<br>
+What student needs is :
+<br>
+Laptop or desktop computers
+Wireless 3G internet service
+Writing tablets
+2-way headsets with microphone
+</div>
+	<h3>FOR INDIVIDUALS: </h3>
+	<div>
+         We have the ability to customize an affordable solution to suit your individual needs. Students send the requirements and select the experts according to needs. Students increase their skill power in favorite subject.
+</div>
+	<h3>FOR INSTITUTE :</h3>
+	<div>                       We have the ability to customize an affordable solution to suit your institutes distinct needs. Some times Institute don’t have skilled expert in required discipline or topic. Institute have best options to hire expert from EDUPRO. They will help you online or classroom classes. It`s very typical to manage best experts for every skills by the Institute but we have customize affordable solution for the colleges. By this way Engineering colleges self rank gets increased.
+
+</div>
+<h3>FOR ORGANIZATION :</h3>
+	<div>  We design new product for industry according to requirement. We meet all quality parameters. We also design PCB for industry. And If organization need trainer for industry we also provide it.
+ 
+
+</div>
+
+</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</div>
+</body>
+</html>
